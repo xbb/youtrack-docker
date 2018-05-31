@@ -6,7 +6,7 @@ RUN apk --no-cache upgrade; \
     echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
     apk --no-cache add gosu@edge;
 
-ENV YOUTRACK_VERSION 2018.1.41051
+ENV YOUTRACK_VERSION 2018.2.42133
 RUN mkdir -p /opt/youtrack; \
 	wget https://download.jetbrains.com/charisma/youtrack-${YOUTRACK_VERSION}.jar -O /opt/youtrack/youtrack.jar; \
 	chmod 644 /opt/youtrack/youtrack.jar;
